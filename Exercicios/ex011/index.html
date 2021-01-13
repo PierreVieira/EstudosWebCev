@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/imgs/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="midia/imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="midia/imgs/foto-m.png" type="image/png">
+        <img src="midia/imgs/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/gods-plan.mp3" type="audio/mpeg">
+        <source src="midia/gods-plan.ogg" type="audio/mpeg">
+        <source src="midia/gods-plan.wav" type="audio/mpeg"> <!-- CUIDADO WAV é muito pesado -->
+        <p>Erro ao reproduzir arquivo de áudio. Por favor tente acessar essa página por outro navegador ou clique<a
+                href="midia/gods-plan.mp3" download="gods-plan.mp3" type="audio/mpeg">aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+</html>
